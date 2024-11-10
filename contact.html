@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA History</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #3b3b3b;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .promo {
+            font-size: 1.2em;
+            font-style: italic;
+        }
+        blockquote {
+            background-color: #e0e0e0;
+            border-left: 5px solid #007a33;
+            margin: 20px 0;
+            padding: 10px 20px;
+            font-style: italic;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        h2 {
+            color: #007a33;
+        }
+        .navbar a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #007a33;
+        }
+        aside {
+            background-color: #007a33;
+            color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        .collapsible-header, .collapsible-body {
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            margin: 5px 0;
+        }
+        .collapsible-header {
+            font-weight: bold;
+            color: #007a33;
+        }
+        .collapsible-body {
+            display: none;
+            padding: 10px;
+        }
+        .collapsible-header:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.collapsible-header').forEach(header => {
+                header.addEventListener('click', function () {
+                    this.nextElementSibling.classList.toggle('active');
+                    this.nextElementSibling.style.display =
+                        this.nextElementSibling.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="navbar">
+
+        <a href="index.html">Home</a>
+        <a href="contact.html">League History</a>
+        <a href="content.html">Players and Games</a>
+        <a href="materialize.html">Creation of the NBA</a>
+        <a href="jquery.html">JQuery</a>
+        
+    </div>
+    <div class="container">
+        <header>
+            <h1>NBA History</h1>
+            <p class="promo">Explore the rich history of the National Basketball Association!</p>
+        </header>
+
+        <blockquote>
+            "History is not just about the past; it's about understanding the present."
+        </blockquote>
+
+  
+
+        <aside>
+            <h3>Fun Fact</h3>
+            <p><em>The Boston Celtics and Los Angeles Lakers are tied for the most NBA championships, each with 17 titles!</em></p>
+        </aside>
+        
+        <footer>
+            <p>&copy; 2024 NBA. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
